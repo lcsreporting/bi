@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LCS Redirect Page</title>
+    <style>
+        /* Styles to add navy blue background and center content */
+        body {
+            background-color: navy; /* Navy blue background */
+            color: white; /* White text color */
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        input, button {
+            margin-top: 10px; /* Spacing for input and button */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://assets-global.website-files.com/62b1bb4ce8cdee528011753e/62b1d6053ef2557f98c8cb23_LCS_System_OneColor-Reversed_-HALF.png" alt="LCS Logo">
+
+    <h2>Enter the code to Continue</h2>
+    <input type="text" id="inputBox" placeholder="Type here">
+    <button onclick="checkInput()">Submit</button>
+
+    <script>
+        function checkInput() {
+            var input = document.getElementById("inputBox").value;
+            if(input.toUpperCase() === "LCS") {
+                window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiNTUzNDg3OTMtMjkzYS00YjZlLWE1NGEtYjdjNDU0ZjVmN2Y2IiwidCI6ImUxODlkNTIyLWM0ZTctNDExYS04NTE1LTVjNDc5YTIyOWZjMiJ9&embedImagePlaceholder=false";
+            } else {
+                alert("Incorrect input. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
+
